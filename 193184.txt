@@ -1,0 +1,562 @@
+aceki@DESKTOP-PP3IS4C MINGW64 ~
+$ cd Desktop\193184_lab1SI
+bash: cd: Desktop193184_lab1SI: No such file or directory
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~
+$ cd Desktop
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop
+$ cd 193184_lab1SI
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI
+$ mkdir SI_2024_lab1_193184
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI
+$ cd SI_2024_lab1_193184
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184
+$ git init
+Initialized empty Git repository in C:/Users/aceki/Desktop/193184_lab1SI/SI_2024_lab1_193184/.git/
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git remote add origin https://github.com/apostoloska21/SI_2024_lab1_193184.git
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git remote -v
+origin  https://github.com/apostoloska21/SI_2024_lab1_193184.git (fetch)
+origin  https://github.com/apostoloska21/SI_2024_lab1_193184.git (push)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git add README.md
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git commit -m "adding readme.md file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'aceki@DESKTOP-PP3IS4C.(none)')
+
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git config --global user.email "apostoloska21@gmail.com"
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git commit -m "adding readme.md file"
+[master (root-commit) 10ea996] adding readme.md file
+ 1 file changed, 2 insertions(+)
+ create mode 100644 README.md
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_1.java', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git commit -m "Add starter code"
+[master 6b4087d] Add starter code
+ 3 files changed, 47 insertions(+)
+ create mode 100644 SILab1Main.java
+ create mode 100644 SILab1_1.java
+ create mode 100644 SILab1_2.java
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git branch
+* master
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull --all
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> master
+
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull origin master
+fatal: couldn't find remote ref master
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git branch --set-upstream-to=origin/master master
+fatal: the requested upstream branch 'origin/master' does not exist
+hint:
+hint: If you are planning on basing your work on an upstream
+hint: branch that already exists at the remote, you may need to
+hint: run "git fetch" to retrieve it.
+hint:
+hint: If you are planning to push out a new local branch that
+hint: will track its remote counterpart, you may want to use
+hint: "git push -u" to set the upstream config as you push.
+hint: Disable this message with "git config advice.setUpstreamFailure false"
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (8/8), 1.19 KiB | 1.19 MiB/s, done.
+Total 8 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/apostoloska21/SI_2024_lab1_193184.git
+ * [new branch]      master -> master
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ checkout branch bug1
+bash: checkout: command not found
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git checkout bug1
+Already on 'bug1'
+M       SILab1_1.java
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git add .
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git commit -m "Fix wrong condition in filterOddLenghtStrings"
+[bug1 b34144e] Fix wrong condition in filterOddLenghtStrings
+ 1 file changed, 2 insertions(+), 4 deletions(-)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git push origin bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 337 bytes | 337.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'bug1' on GitHub by visiting:
+remote:      https://github.com/apostoloska21/SI_2024_lab1_193184/pull/new/bug1
+remote:
+To https://github.com/apostoloska21/SI_2024_lab1_193184.git
+ * [new branch]      bug1 -> bug1
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git checkout bug2
+Already on 'bug2'
+M       SILab1_2.java
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git add .
+warning: in the working copy of 'SILab1_2.java', LF will be replaced by CRLF the next time Git touches it
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git commit -m "Fix wrong condition in makeBigStringFrom"
+[bug2 9389c99] Fix wrong condition in makeBigStringFrom
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git push
+fatal: The current branch bug2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git add .
+warning: in the working copy of 'SILab1Main.java', LF will be replaced by CRLF the next time Git touches it
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git commit -m "Call method filterOddLenghtStrings in main class"
+[bug1 212e12d] Call method filterOddLenghtStrings in main class
+ 1 file changed, 2 insertions(+)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git add .
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git commit -m "Call method makeBigStringFrom in main class"
+On branch bug2
+nothing to commit, working tree clean
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git commit -m "Call method makeBigStringFrom in main class"
+On branch bug2
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   SILab1Main.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git add .
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git commit -m "Call method makeBigStringFrom in main class"
+[bug2 ef88543] Call method makeBigStringFrom in main class
+ 1 file changed, 1 insertion(+)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git pull origin bug1
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug1       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git push
+fatal: The current branch bug2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin bug2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull origin bug2
+fatal: couldn't find remote ref bug2
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git checkout bug2
+Already on 'bug2'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git branch -r
+  origin/bug1
+  origin/master
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git push --set-upstream origin bug2
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 727 bytes | 727.00 KiB/s, done.
+Total 6 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 3 local objects.
+remote:
+remote: Create a pull request for 'bug2' on GitHub by visiting:
+remote:      https://github.com/apostoloska21/SI_2024_lab1_193184/pull/new/bug2
+remote:
+To https://github.com/apostoloska21/SI_2024_lab1_193184.git
+ * [new branch]      bug2 -> bug2
+branch 'bug2' set up to track 'origin/bug2'.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull origin bug2
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug2       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git push origin bug1
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 393 bytes | 393.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/apostoloska21/SI_2024_lab1_193184.git
+   b34144e..212e12d  bug1 -> bug1
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git push origin bug2
+Everything up-to-date
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git checkout master
+Switched to branch 'master'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git merge bug1
+Updating 6b4087d..212e12d
+Fast-forward
+ SILab1Main.java | 2 ++
+ SILab1_1.java   | 6 ++----
+ 2 files changed, 4 insertions(+), 4 deletions(-)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull origin master
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git pull origin bug11
+fatal: couldn't find remote ref bug11
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git pull origin bug1
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug1       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug1)
+$ git checkout bug2
+Switched to branch 'bug2'
+Your branch is up to date with 'origin/bug2'.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git rebase -i master
+error: invalid command ':wq'
+error: invalid line 4: :wq
+You can fix this with 'git rebase --edit-todo' and then run 'git rebase --continue'.
+Or you can abort the rebase with 'git rebase --abort'.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE)
+$ git rebase --continue
+error: invalid command ':wq'
+error: invalid line 33: :wq
+error: please fix this using 'git rebase --edit-todo'.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE)
+$ git rebase --continue
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+error: could not apply ef88543... Call method makeBigStringFrom in main class
+hint: Resolve all conflicts manually, mark them as resolved with
+hint: "git add/rm <conflicted_files>", then run "git rebase --continue".
+hint: You can instead skip this commit: run "git rebase --skip".
+hint: To abort and get back to the state before "git rebase", run "git rebase --abort".
+Could not apply ef88543... Call method makeBigStringFrom in main class
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkout master
+error: you need to resolve your current index first
+SILab1Main.java: needs merge
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git add .
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git commit "fixing "
+error: pathspec 'fixing ' did not match any file(s) known to git
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git commit -m "fixing "
+[detached HEAD ebd04c7] fixing
+ 1 file changed, 4 insertions(+)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkout master
+Warning: you are leaving 2 commits behind, not connected to
+any of your branches:
+
+  ebd04c7 fixing
+  7758848 Fix wrong condition in makeBigStringFrom
+
+If you want to keep them by creating a new branch, this may be a good time
+to do so with:
+
+ git branch <new-branch-name> ebd04c7
+
+Switched to branch 'master'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git merge bug2
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkout bug2
+error: you need to resolve your current index first
+SILab1Main.java: needs merge
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git merge
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkout master
+Already on 'master'
+M       SILab1Main.java
+M       SILab1_2.java
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git add .
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git commit -m "fixing conflicts"
+[master cbd14a4] fixing conflicts
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git push
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkouot bug2
+git: 'checkouot' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkout bug1
+Switched to branch 'bug1'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git checkout master
+Switched to branch 'master'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git merge bug2
+Auto-merging SILab1Main.java
+CONFLICT (content): Merge conflict in SILab1Main.java
+Automatic merge failed; fix conflicts and then commit the result.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git add SILab1Main.java
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git commit
+[master 346d6b2] Merge branch 'bug2'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git add SILab1Main.java
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git commit\
+> git commit
+git: 'commitgit' is not a git command. See 'git --help'.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git commit
+On branch master
+Last commands done (2 commands done):
+   pick 9389c99 Fix wrong condition in makeBigStringFrom
+   pick ef88543 Call method makeBigStringFrom in main class
+No commands remaining.
+You are currently editing a commit while rebasing branch 'bug2' on '212e12d'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2|REBASE 2/2)
+$ git rebase --continue
+Successfully rebased and updated refs/heads/bug2.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git merge bug2
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git fetch origin
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull origin bug
+fatal: couldn't find remote ref bug
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull origin bug1
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug1       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull origin bug2
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug2       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull -all
+error: did you mean `--all` (with two dashes)?
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git pull --all
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git fetch --all
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (bug2)
+$ git checkout master
+Switched to branch 'master'
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git fetch origin
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull origin branch1
+fatal: couldn't find remote ref branch1
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull origin bug1
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug1       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull origin bug2
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            bug2       -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git pull origin master
+From https://github.com/apostoloska21/SI_2024_lab1_193184
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git fetch all
+fatal: 'all' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git fetch --all
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
+$ git fetch origin
+
+aceki@DESKTOP-PP3IS4C MINGW64 ~/Desktop/193184_lab1SI/SI_2024_lab1_193184 (master)
